@@ -185,6 +185,7 @@
 
       $("#host_name").attr("href",url); 
 
+      $("#server_name").text(map['name']);
       $("#ip").text(map['ip']);
       $("#port").text(map['port']);
       $("#cipher").text('aes-256-gcm');
@@ -237,6 +238,7 @@
   <table class="table">
      <thead>
        <tr>
+         <th>name</th>
          <th>ip</th>
          <th>port</th>
          <th>cipher</th>
@@ -245,6 +247,7 @@
      </thead>
      <tbody>
        <tr>
+         <td id="server_name"></td>
          <td id="ip"></td>
          <td id="port"></td>
          <td id="cipher"></td>
@@ -257,6 +260,8 @@
 
 
   <a id="host_name"style="color-interpolation-filters: "></a> 
+
+
 
   <div id="qrcode"> 
   </div>  
